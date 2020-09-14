@@ -4,9 +4,11 @@ import Layout from "./Layout";
 
 export default () => {
   return (
-    <Switch>
-      <Route exact path="/layout" component={Layout} />
-      <Redirect exact to="/" />
-    </Switch>
+    <div className="container-fluid">
+      <Switch>
+        <Route exact path="/layout" component={Layout} />
+        <Redirect exact to="/" />
+      </Switch>
+    </div>
   );
 };
