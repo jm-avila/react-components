@@ -1,13 +1,15 @@
 import React from "react";
-import { ErrorBoundary, Header } from "./components";
+import { BrowserRouter } from "react-router-dom";
+import { ErrorBoundary, Header, RoutesSwitch } from "./components";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <ErrorBoundary>
         <Header />
+        <RoutesSwitch />
       </ErrorBoundary>
-    </div>
+    </BrowserRouter>
   );
 }
 
