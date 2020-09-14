@@ -1,9 +1,12 @@
 import React from "react";
+import { ErrorBoundary, Header } from "./components";
 
 function App() {
   return (
     <div className="App">
-      <h1>Plain</h1>
+      <ErrorBoundary>
+        <Header />
+      </ErrorBoundary>
     </div>
   );
 }
