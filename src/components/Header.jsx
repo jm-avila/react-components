@@ -30,6 +30,14 @@ export default () => {
       >
         Counter
       </NavLink>
+
+      <NavLink
+        activeClassName={activeClassName}
+        to="/mr-sparkle"
+        className="navbar-brand"
+      >
+        Mr Sparkle
+      </NavLink>
     </nav>
   );
 };
