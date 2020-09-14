@@ -1,12 +1,14 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import Layout from "./Layout";
+import Calculator from "./Calculator";
+import Counter from "./Counter";
 
 export default () => {
   return (
     <div className="container-fluid">
       <Switch>
-        <Route exact path="/layout" component={Layout} />
+        <Route exact path="/calculator" component={Calculator} />
+        <Route exact path="/counter" component={Counter} />
         <Redirect exact to="/" />
       </Switch>
     </div>

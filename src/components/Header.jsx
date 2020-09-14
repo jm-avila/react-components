@@ -5,7 +5,7 @@ export default () => {
   const activeClassName =
     "border border-dark border-top-0 border-right-0 border-left-0";
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <NavLink
         activeClassName={activeClassName}
         to="/"
@@ -17,10 +17,18 @@ export default () => {
 
       <NavLink
         activeClassName={activeClassName}
-        to="/layout"
+        to="/calculator"
         className="navbar-brand"
       >
-        Layout
+        Calculator
+      </NavLink>
+
+      <NavLink
+        activeClassName={activeClassName}
+        to="/counter"
+        className="navbar-brand"
+      >
+        Counter
       </NavLink>
     </nav>
   );
